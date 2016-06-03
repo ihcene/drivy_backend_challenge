@@ -24,3 +24,21 @@ For higher levels we are interested in seeing code that is:
 ## Things to know
 
 - all prices are stored as integers (in cents)
+
+
+# Solution
+
+## How to run
+
+    $ cd backend
+    $ bundle install
+
+    $ cd level(1-6)
+    $ bundle exec ruby main.js
+
+
+## Description
+
+- Dependencies are defined on a commun Gemfile located at the root of levels folder
+- ActiveSupport is mainly used to autoload files, ActiveModel is used for model serialization
+- To reduce duplication, each level requires code from the previous levels and extend it (cf. support.rb files and model/rental.rb files)
