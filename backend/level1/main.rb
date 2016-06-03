@@ -1,3 +1,3 @@
-require "json"
+require './support'
 
-# your code
+Rental.all.json_export('output.json')
